@@ -494,9 +494,9 @@
         "userProps": "",
         "sessionExpiry": "",
         "credentials": {
-  "user": "nano1",
-  "password": "nano1"
-}
+            "user": "nano1",
+            "password": "nano1"
+        }
 
     },
     {
