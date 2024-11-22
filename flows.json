@@ -494,9 +494,10 @@
         "userProps": "",
         "sessionExpiry": "",
         "credentials": {
-            "user": "nano1",
-            "password": "nano1"
-        }
+            "user": "${MQTT_USER}",
+            "password": "${MQTT_PASSWORD}"
+}
+
 
     },
     {
