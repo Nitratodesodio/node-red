@@ -494,9 +494,9 @@
         "userProps": "",
         "sessionExpiry": "",
         "credentials": {
-            "user": "${MQTT_USER}",
-            "password": "${MQTT_PASSWORD}"
-}
+        "user": "${MQTT_USER}",
+        "password": "${MQTT_PASSWORD}"
+    }
 
 
     },
@@ -515,40 +515,48 @@
         "alpnprotocol": ""
     }
     ,
-{
-    "id": "auto-reconnect",
-    "type": "inject",
-    "z": "f8b29b715bb8b2c9",
-    "name": "Forzar reconexión al iniciar",
-    "props": [],
-    "repeat": "",
-    "crontab": "",
-    "once": true,
-    "onceDelay": 0.5,
-    "topic": "",
-    "payload": "",
-    "payloadType": "date",
-    "x": 150,
-    "y": 100,
-    "wires": [
-        [
-            "reconnect-function"
+    {
+        "id": "f8b29b715bb8b2c9",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "auto-reconnect",
+        "type": "inject",
+        "z": "f8b29b715bb8b2c9",
+        "name": "Forzar reconexión al iniciar",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 2,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "reconnect-function"
+            ]
         ]
-    ]
-},
-{
-    "id": "reconnect-function",
-    "type": "function",
-    "z": "f8b29b715bb8b2c9",
-    "name": "Reconectar MQTT",
-    "func": "// Forzar reconexión manual al broker\nlet mqttBrokerId = \"5322238dbb9749db\";\nnode.send({\n    payload: \"connect\",\n    _msgid: mqttBrokerId\n});\nreturn msg;",
-    "outputs": 1,
-    "noerr": 0,
-    "initialize": "",
-    "finalize": "",
-    "x": 400,
-    "y": 100,
-    "wires": []
-}
+    },
+    {
+        "id": "reconnect-function",
+        "type": "function",
+        "z": "f8b29b715bb8b2c9",
+        "name": "Reconectar MQTT",
+        "func": "// Forzar reconexión manual al broker\nnode.send({ connect: true });\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 100,
+        "wires": []
+    }
 
 ]
