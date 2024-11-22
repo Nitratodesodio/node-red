@@ -543,6 +543,19 @@ module.exports = {
 
     /** Timeout in milliseconds for HTTP request connections. Defaults to 120s */
     //httpRequestTimeout: 120000,
+    mqtt: {
+        brokers: [
+            {
+                name: "default",
+                broker: "z3ef5889.ala.us-east-1.emqxsl.com",
+                port: 8883,
+                credentials: {
+                    user: "nano1",
+                    password: "nano1"
+                }
+            }
+        ]
+    },
 
     /** Retry time in milliseconds for MQTT connections */
     mqttReconnectTime: 15000,
