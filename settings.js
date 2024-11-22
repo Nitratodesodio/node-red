@@ -33,7 +33,8 @@ module.exports = {
 
     /** The file containing the flows. If not set, defaults to flows_<hostname>.json **/
     uiPort: process.env.PORT || 1880,
-    flowFile: 'flows.json',
+    userDir: "./",
+    flowFile: "flows.json",
 
     /** By default, credentials are encrypted in storage using a generated key. To
      * specify your own secret, set the following property.
