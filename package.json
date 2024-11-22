@@ -1,0 +1,15 @@
+{
+  "name": "red-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "start": "node node_modules/node-red/red.js -v -s settings.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-red": "^4.0.5"
+  }
+}
