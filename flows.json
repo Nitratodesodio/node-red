@@ -1,11 +1,1593 @@
 [
     {
+        "id": "08dab25d7d374d65",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c6b93a7abaa54455",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "17f0fa18f232142c",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4f2c41eea99da0c4",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "tab1",
+        "type": "tab",
+        "label": "Automatización Horarios",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "d0afc6a1413435ba",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "827dbf968352d971",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ba153755bb703802",
+        "type": "tab",
+        "label": "Flow 6",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "f8b29b715bb8b2c9",
         "type": "tab",
         "label": "Flow 6",
         "disabled": false,
         "info": "",
         "env": []
+    },
+    {
+        "id": "60617d118646dea1",
+        "type": "tab",
+        "label": "Flow 8",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6caeb7165f88e59f",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "mqtt-broker1",
+        "type": "mqtt-broker",
+        "name": "Broker MQTT",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "11cfb73af659bb18",
+        "type": "postgresDB",
+        "name": "admin@127.0.0.1:5432/Sisclimatizacion",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SCC_TEST_CLASES",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "1",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "root",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "c9ade18d711d02be",
+        "type": "postgresDB",
+        "name": "postgres@127.0.0.1:5432/SCC_TEST_CLASES",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SCC_TEST_CLASES",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": 1,
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "root",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "918af8b39549e643",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "postgres",
+        "databaseFieldType": "str",
+        "ssl": "true",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "",
+        "userFieldType": "str",
+        "password": "",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "3695d45695513d8d",
+        "type": "postgreSQLConfig",
+        "name": "Obtener clases",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SCC_TEST_CLASES",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "root",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "3c7d060b45cce609",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b215be8e56c463c5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0b1488908e580c21",
+        "type": "mqtt-broker",
+        "name": "aaa",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cd02f17a5c0996fe",
+        "type": "mqtt-broker",
+        "name": "ahorasi",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "da1af0d39e3e25be",
+        "type": "mqtt-broker",
+        "name": "aaa",
+        "broker": "4841294a15b64138b4f168037a7b7a2a.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b2cd7032c28babb3",
+        "type": "postgreSQLConfig",
+        "name": "Obtener clases",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "SCC_TEST_CLASES",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "root",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "3d6991b35c72e0e6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "4841294a15b64138b4f168037a7b7a2a.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "5",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e744a254f7239db4",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "06bc99c0b5924c838684c04a7a0e45a1.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5322238dbb9749db",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "z3ef5889.ala.us-east-1.emqxsl.com",
+        "port": "8883",
+        "tls": "0b89bbcfcf8700fb",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0b89bbcfcf8700fb",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "emqxsl-ca.crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "e4550e7be4078eab",
+        "type": "mqtt in",
+        "z": "c6b93a7abaa54455",
+        "name": "Suscripcion a Sala101",
+        "topic": "101",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6caeb7165f88e59f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "ed390e1d7507e00a"
+            ]
+        ]
+    },
+    {
+        "id": "e7d07245583b62ce",
+        "type": "mqtt in",
+        "z": "c6b93a7abaa54455",
+        "name": "Suscripcion a Sala101",
+        "topic": "102",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "6caeb7165f88e59f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "ed390e1d7507e00a"
+            ]
+        ]
+    },
+    {
+        "id": "a9bfe300ae6f3f4c",
+        "type": "mqtt out",
+        "z": "c6b93a7abaa54455",
+        "name": "Mensajesala101",
+        "topic": "",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6caeb7165f88e59f",
+        "x": 520,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a13ede964e230c3f",
+        "type": "inject",
+        "z": "c6b93a7abaa54455",
+        "name": "Inyectar mensaje 101",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "sala101",
+        "payload": "111",
+        "payloadType": "num",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "a9bfe300ae6f3f4c"
+            ]
+        ]
+    },
+    {
+        "id": "310eb19265f72540",
+        "type": "file in",
+        "z": "c6b93a7abaa54455",
+        "name": "Json planificacion",
+        "filename": "C:/Users/nitrato/Desktop/salas_plani_json.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "9164e65163c9570c"
+            ]
+        ]
+    },
+    {
+        "id": "7bd11332054c6bbc",
+        "type": "inject",
+        "z": "c6b93a7abaa54455",
+        "name": "Inyectar planificacion",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 140,
+        "y": 500,
+        "wires": [
+            [
+                "310eb19265f72540"
+            ]
+        ]
+    },
+    {
+        "id": "ed390e1d7507e00a",
+        "type": "debug",
+        "z": "c6b93a7abaa54455",
+        "name": "Ventana para ver mensajes",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cca7bf199c403056",
+        "type": "switch",
+        "z": "c6b93a7abaa54455",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9164e65163c9570c",
+        "type": "debug",
+        "z": "c6b93a7abaa54455",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e7742cfcc0cdf4a5",
+        "type": "inject",
+        "z": "17f0fa18f232142c",
+        "name": "Inicio",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 70,
+        "y": 140,
+        "wires": [
+            [
+                "ea513d5f68d27629"
+            ]
+        ]
+    },
+    {
+        "id": "5b58ad9ee43a95d4",
+        "type": "file in",
+        "z": "17f0fa18f232142c",
+        "name": "Json planificacion",
+        "filename": "C:/Users/nitrato/Desktop/salas_plani_json.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 390,
+        "y": 160,
+        "wires": [
+            [
+                "1b49082372c117cc"
+            ]
+        ]
+    },
+    {
+        "id": "ea513d5f68d27629",
+        "type": "function",
+        "z": "17f0fa18f232142c",
+        "name": "function 1",
+        "func": "const now = new Date();\nconst horaActual = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\nmsg.hora_actual = horaActual;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 320,
+        "wires": [
+            [
+                "5b58ad9ee43a95d4"
+            ]
+        ]
+    },
+    {
+        "id": "d01c1a73e5b7a6ec",
+        "type": "split",
+        "z": "17f0fa18f232142c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 630,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0967e2e73a0b0e4e",
+        "type": "mqtt out",
+        "z": "17f0fa18f232142c",
+        "name": "Mensajesala",
+        "topic": "",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "6caeb7165f88e59f",
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1f3b84adaaa37f21",
+        "type": "debug",
+        "z": "17f0fa18f232142c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1b49082372c117cc",
+        "type": "function",
+        "z": "17f0fa18f232142c",
+        "name": "function 2",
+        "func": "const horaActual = msg.hora_actual;\nconst planificacion = msg.payload; // Supone que msg.payload es un array de registros\nlet mensajes = [];\n\nplanificacion.forEach(item => {\n    if (horaActual === item.hora_inicio) {\n        mensajes.push({ sala: item.sala, payload: \"ON\" });\n    } else if (horaActual === item.hora_fin) {\n        mensajes.push({ sala: item.sala, payload: \"OFF\" });\n    }\n});\n\nmsg.payload = mensajes; // Devuelve un array de mensajes\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 220,
+        "wires": [
+            [
+                "d01c1a73e5b7a6ec"
+            ]
+        ]
+    },
+    {
+        "id": "inject1",
+        "type": "inject",
+        "z": "tab1",
+        "name": "Iniciar cada minuto",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "function1"
+            ]
+        ]
+    },
+    {
+        "id": "function1",
+        "type": "function",
+        "z": "tab1",
+        "name": "Calcular hora actual",
+        "func": "const now = new Date();\nconst horaActual = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\nmsg.payload = horaActual;  // Cambia msg.payload para verificar\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "function2"
+            ]
+        ]
+    },
+    {
+        "id": "function2",
+        "type": "function",
+        "z": "tab1",
+        "name": "Comparar con planificación",
+        "func": "const horaActual = msg.hora_actual || msg.payload;  // Usa msg.hora_actual o msg.payload si no está definido\nnode.warn(`Hora actual: ${horaActual}`);\n\nconst planificacion = [\n    { \"sala\": \"101\", \"hora_inicio\": \"21:33\", \"hora_fin\": \"21:37\" },\n    { \"sala\": \"102\", \"hora_inicio\": \"21:33\", \"hora_fin\": \"21:37\" },\n];\n\nlet mensajes = [];\n\nplanificacion.forEach(item => {\n    // Construir el topic asegurando formato válido\n    let topic = `${item.sala}`.trim();  // Asegura que no haya espacios\n    topic = topic.replace(/[^a-zA-Z0-9/]/g, '');  // Remueve caracteres no válidos si existen\n\n    // Verificación adicional para asegurarse de que el topic sea válido\n    if (!topic || !/^[a-zA-Z0-9/]+$/.test(topic)) {\n        node.warn(`Tópico inválido detectado: ${topic}`);\n        return;  // Saltar este mensaje si el tópico es inválido\n    }\n\n\n    if (horaActual === item.hora_inicio) {\n        mensajes.push({ topic: topic, payload: \"ON\" });\n        node.warn(`Encendiendo sala ${item.sala}`);\n    } else if (horaActual === item.hora_fin) {\n        mensajes.push({ topic: topic, payload: \"OFF\" });\n        node.warn(`Apagando sala ${item.sala}`);\n    }\n});\n\n// Publicar mensajes uno a uno configurando msg.topic y msg.payload\nif (mensajes.length > 0) {\n    mensajes.forEach(mensaje => {\n        // Configurar msg para cada mensaje\n        node.send({ topic: mensaje.topic, payload: mensaje.payload });\n    });\n} else {\n    node.warn(\"No hay mensajes generados para el horario actual.\");\n}\n\n// No necesitamos devolver el mensaje original ya que estamos enviando cada mensaje individualmente\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "split1"
+            ]
+        ]
+    },
+    {
+        "id": "split1",
+        "type": "split",
+        "z": "tab1",
+        "name": "Dividir mensajes",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            [
+                "mqtt1"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt1",
+        "type": "mqtt out",
+        "z": "tab1",
+        "name": "Enviar Mensaje Sala",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt-broker1",
+        "x": 780,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "4c6a1b39d838b0eb",
+        "type": "debug",
+        "z": "tab1",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "54f02000b20249ee",
+        "type": "file in",
+        "z": "tab1",
+        "name": "Json planificacion",
+        "filename": "C:/Users/nitrato/Desktop/salas_plani_json.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ad3c08435f978dd",
+        "type": "inject",
+        "z": "d0afc6a1413435ba",
+        "name": "Iniciar cada minuto",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            [
+                "535ca9a2383c0913"
+            ]
+        ]
+    },
+    {
+        "id": "535ca9a2383c0913",
+        "type": "function",
+        "z": "d0afc6a1413435ba",
+        "name": "Calcular hora actual",
+        "func": "const now = new Date();\nconst horaActual = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\nmsg.payload = horaActual;  // Cambia msg.payload para verificar\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 280,
+        "wires": [
+            [
+                "3ce3b83ff5e99a97"
+            ]
+        ]
+    },
+    {
+        "id": "4c6bef488a69489f",
+        "type": "function",
+        "z": "d0afc6a1413435ba",
+        "name": "Comparar con planificación",
+        "func": "// Suponiendo que msg.payload contiene el texto del JSON leído del archivo\nlet jsonString = msg.payload;\n\ntry {\n    // Convertir el texto JSON a un array de objetos\n    jsonString = '[' + jsonString.trim().split('\\n').map(line => line.trim()).filter(line => line.length > 0).join(',') + ']';\n    const planificacion = JSON.parse(jsonString);  // Convertir a array de objetos\n\n    // Obtener la hora actual\n    let horaActual = msg.hora_actual || msg.payload;  // Usa msg.hora_actual o msg.payload si no está definido\n\n    // Quitar los segundos de la hora actual si existen (mantener formato \"HH:MM\")\n    if (typeof horaActual === \"string\" && horaActual.length === 8) {\n        horaActual = horaActual.substring(0, 5);\n    }\n    horaActual = horaActual.trim();  // Asegura que no haya espacios\n\n    let mensajes = [];\n\n    planificacion.forEach(item => {\n        // Quitar los segundos de las horas en el JSON\n        let horaInicio = item[\"Hora inicio\"].substring(0, 5).trim();\n        let horaFin = item[\"Hora fin\"].substring(0, 5).trim();\n\n\n        // Construir el topic asegurando formato válido\n        let topic = `sala/${item[\"Sala Planificada\"]}`.trim();  // Asegura que no haya espacios\n        topic = topic.replace(/[^a-zA-Z0-9/]/g, '');  // Remueve caracteres no válidos si existen\n\n        // Verificación adicional para asegurarse de que el topic sea válido\n        if (!topic || !/^[a-zA-Z0-9/]+$/.test(topic)) {\n            node.warn(`Tópico inválido detectado: ${topic}`);\n            return;  // Saltar este mensaje si el tópico es inválido\n        }\n\n       \n        // Compara con la hora de inicio y fin del objeto\n        if (horaActual === horaInicio) {\n            mensajes.push({ topic: topic, payload: \"ON\" });\n            node.warn(`Encendiendo sala ${item[\"Sala Planificada\"]}`);\n        } else if (horaActual === horaFin) {\n            mensajes.push({ topic: topic, payload: \"OFF\" });\n            node.warn(`Apagando sala ${item[\"Sala Planificada\"]}`);\n        }\n    });\n\n    // Publicar mensajes uno a uno configurando msg.topic y msg.payload\n    if (mensajes.length > 0) {\n        mensajes.forEach(mensaje => {\n            node.send({ topic: mensaje.topic, payload: mensaje.payload });\n        });\n    } else {\n        node.warn(\"No hay mensajes generados para el horario actual.\");\n    }\n\n} catch (error) {\n    node.error(\"Error al parsear el JSON: \" + error);\n    return null;  // Detiene la ejecución si hay un error\n}\n\n// No necesitamos devolver el mensaje original ya que estamos enviando cada mensaje individualmente\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "68505edfae14b094",
+                "7d46928eb5691151"
+            ]
+        ]
+    },
+    {
+        "id": "68505edfae14b094",
+        "type": "split",
+        "z": "d0afc6a1413435ba",
+        "name": "Dividir mensajes",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 680,
+        "y": 240,
+        "wires": [
+            [
+                "22ee39d2baca2f11"
+            ]
+        ]
+    },
+    {
+        "id": "22ee39d2baca2f11",
+        "type": "mqtt out",
+        "z": "d0afc6a1413435ba",
+        "name": "Enviar Mensaje Sala",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt-broker1",
+        "x": 760,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "7d46928eb5691151",
+        "type": "debug",
+        "z": "d0afc6a1413435ba",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3ce3b83ff5e99a97",
+        "type": "file in",
+        "z": "d0afc6a1413435ba",
+        "name": "Json planificacion",
+        "filename": "C:/Users/nitrato/Desktop/salas_plani_json.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 490,
+        "y": 420,
+        "wires": [
+            [
+                "4c6bef488a69489f"
+            ]
+        ]
+    },
+    {
+        "id": "7e4e02bb662897a2",
+        "type": "inject",
+        "z": "827dbf968352d971",
+        "name": "Iniciar cada minuto",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "323f663eadc547f8"
+            ]
+        ]
+    },
+    {
+        "id": "323f663eadc547f8",
+        "type": "function",
+        "z": "827dbf968352d971",
+        "name": "Calcular hora actual",
+        "func": "const now = new Date();\nconst horaActual = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\nmsg.payload = horaActual;  // Cambia msg.payload para verificar\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "3fcc30cbedf3ddf0"
+            ]
+        ]
+    },
+    {
+        "id": "1ccf9feed0c96372",
+        "type": "function",
+        "z": "827dbf968352d971",
+        "name": "Comparar con planificación",
+        "func": "// Suponiendo que msg.payload contiene el texto del JSON leído del archivo\nlet jsonString = msg.payload;\n\ntry {\n    // Convertir el texto JSON a un array de objetos\n    jsonString = '[' + jsonString.trim().split('\\n').map(line => line.trim()).filter(line => line.length > 0).join(',') + ']';\n    const planificacion = JSON.parse(jsonString);  // Convertir a array de objetos\n\n    // Obtener la hora actual\n    let horaActual = msg.hora_actual || msg.payload;  // Usa msg.hora_actual o msg.payload si no está definido\n\n    // Quitar los segundos de la hora actual si existen (mantener formato \"HH:MM\")\n    if (typeof horaActual === \"string\" && horaActual.length === 8) {\n        horaActual = horaActual.substring(0, 5);\n    }\n    horaActual = horaActual.trim();  // Asegura que no haya espacios\n\n    let mensajes = [];\n\n    planificacion.forEach(item => {\n        // Quitar los segundos de las horas en el JSON\n        let horaInicio = item[\"Hora inicio\"].substring(0, 5).trim();\n        let horaFin = item[\"Hora fin\"].substring(0, 5).trim();\n\n\n        // Construir el topic asegurando formato válido\n        let topic = `sala/${item[\"Sala Planificada\"]}`.trim();  // Asegura que no haya espacios\n        topic = topic.replace(/[^a-zA-Z0-9/]/g, '');  // Remueve caracteres no válidos si existen\n\n        // Verificación adicional para asegurarse de que el topic sea válido\n        if (!topic || !/^[a-zA-Z0-9/]+$/.test(topic)) {\n            node.warn(`Tópico inválido detectado: ${topic}`);\n            return;  // Saltar este mensaje si el tópico es inválido\n        }\n\n       \n        // Compara con la hora de inicio y fin del objeto\n        if (horaActual === horaInicio) {\n            mensajes.push({ topic: topic, payload: \"ON\" });\n            node.warn(`Encendiendo sala ${item[\"Sala Planificada\"]}`);\n        } else if (horaActual === horaFin) {\n            mensajes.push({ topic: topic, payload: \"OFF\" });\n            node.warn(`Apagando sala ${item[\"Sala Planificada\"]}`);\n        }\n    });\n\n    // Publicar mensajes uno a uno configurando msg.topic y msg.payload\n    if (mensajes.length > 0) {\n        mensajes.forEach(mensaje => {\n            node.send({ topic: mensaje.topic, payload: mensaje.payload });\n        });\n    } else {\n        node.warn(\"No hay mensajes generados para el horario actual.\");\n    }\n\n} catch (error) {\n    node.error(\"Error al parsear el JSON: \" + error);\n    return null;  // Detiene la ejecución si hay un error\n}\n\n// No necesitamos devolver el mensaje original ya que estamos enviando cada mensaje individualmente\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "b89f5824294d7db1",
+                "1d352f1c13650c3e"
+            ]
+        ]
+    },
+    {
+        "id": "b89f5824294d7db1",
+        "type": "split",
+        "z": "827dbf968352d971",
+        "name": "Dividir mensajes",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 700,
+        "y": 240,
+        "wires": [
+            [
+                "1a5e83afaeab8bad"
+            ]
+        ]
+    },
+    {
+        "id": "1a5e83afaeab8bad",
+        "type": "mqtt out",
+        "z": "827dbf968352d971",
+        "name": "Enviar Mensaje Sala",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "mqtt-broker1",
+        "x": 780,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1d352f1c13650c3e",
+        "type": "debug",
+        "z": "827dbf968352d971",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "3fcc30cbedf3ddf0",
+        "type": "file in",
+        "z": "827dbf968352d971",
+        "name": "Json planificacion",
+        "filename": "C:/Users/nitrato/Desktop/salas_plani_json.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "1ccf9feed0c96372"
+            ]
+        ]
+    },
+    {
+        "id": "55474f0b9ce99344",
+        "type": "mqtt in",
+        "z": "827dbf968352d971",
+        "name": "",
+        "topic": "",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1d1ab9bd0d9f4c3f",
+        "type": "inject",
+        "z": "ba153755bb703802",
+        "name": "Obtener planificacion cada dia",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 190,
+        "y": 280,
+        "wires": [
+            [
+                "b4ed44f93fa29096"
+            ]
+        ]
+    },
+    {
+        "id": "b4ed44f93fa29096",
+        "type": "postgresql",
+        "z": "ba153755bb703802",
+        "name": "",
+        "query": "SELECT \n    Clase.cod_clase,\n\n    Clase.sala_real,\n    Clase.fecha,\n    Bloque_horario.hora_inicio,\n    Bloque_horario.hora_fin\nFROM \n    Clase\nINNER JOIN \n    Bloque_horario ON Clase.bloque = Bloque_horario.bloque;\n",
+        "postgreSQLConfig": "3695d45695513d8d",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 370,
+        "y": 180,
+        "wires": [
+            [
+                "e9c3c9fd267b472d"
+            ]
+        ]
+    },
+    {
+        "id": "5331ab5a99d666af",
+        "type": "mqtt out",
+        "z": "ba153755bb703802",
+        "name": "Enviar Mensaje Sala",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd02f17a5c0996fe",
+        "x": 1200,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "ae7d9c61aaaacad3",
+        "type": "split",
+        "z": "ba153755bb703802",
+        "name": "Dividir mensajes",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1340,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "05ea0ef08c85139a",
+        "type": "function",
+        "z": "ba153755bb703802",
+        "name": "Comparar con planificación",
+        "func": "// Formatear la hora actual para asegurar coincidencia con item.hora_inicio en formato HH:MM\nconst currentDate = new Date();\nconst horaActual = `${currentDate.getHours().toString().padStart(2, '0')}:${currentDate.getMinutes().toString().padStart(2, '0')}`;\nnode.warn(`Hora actual formateada: ${horaActual}`);\n\nconst planificacion = msg.payload || [];\n\nlet mensajes = [];\n\nplanificacion.forEach(item => {\n    // Construir el topic asegurando formato válido\n    let topic = `${item.sala_real}`.trim();  // Asegura que no haya espacios\n    topic = topic.replace(/[^a-zA-Z0-9/]/g, '');  // Remueve caracteres no válidos si existen\n\n    // Normalizar el valor de hora_inicio y hora_fin al formato HH:MM\n    const horaInicio = item.hora_inicio.slice(0, 5); // Tomamos solo los primeros 5 caracteres (HH:MM)\n    const horaFin = item.hora_fin.slice(0, 5); // Tomamos solo los primeros 5 caracteres (HH:MM)\n    if(msg.fecha==item.fecha){\n\n\n    }else{\n        \n    }\n    node.warn(`Hora de inicio para la sala ${item.sala_real}: ${horaInicio}`);\n    if (horaActual === horaInicio) {\n        mensajes.push({ topic: topic, payload: \"ON\" });\n        node.warn(`Encendiendo sala ${item.sala_real}`);\n    } else if (horaActual === horaFin) {\n        mensajes.push({ topic: topic, payload: \"OFF\" });\n        node.warn(`Apagando sala ${item.sala_real}`);\n    }\n});\n\n\n// No necesitamos devolver el mensaje original ya que estamos enviando cada mensaje individualmente\nreturn null;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1340,
+        "y": 280,
+        "wires": [
+            [
+                "ae7d9c61aaaacad3"
+            ]
+        ]
+    },
+    {
+        "id": "a7f4390a0ea68586",
+        "type": "inject",
+        "z": "ba153755bb703802",
+        "name": "Ejecutar cada 1 segundo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "hora",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 420,
+        "wires": [
+            [
+                "9351577cc441b106"
+            ]
+        ]
+    },
+    {
+        "id": "9351577cc441b106",
+        "type": "function",
+        "z": "ba153755bb703802",
+        "name": "Obtener planificacion y comparar hora de inicio = hora actual",
+        "func": "// Obtener la hora actual\nconst now = new Date();\nconst horaActual = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\nmsg.hora = horaActual;\n\n// Obtener los datos almacenados globalmente de la base de datos\nconst dbData = global.get('dbData');\n\n// Recorrer los registros de dbData para comparar la hora\nlet mensaje = [];\n\n    dbData.forEach(registro => {\n        const { hora_inicio, hora_fin, sala_real } = registro;\n        let parts = hora_inicio.split(\":\");\n        let hora_iniciof = parts[0] + \":\" + parts[1]; // \"HH:MM\"\n        \n        let partsf = hora_fin.split(\":\");\n        let hora_finf = partsf[0] + \":\" + partsf[1]; // \"HH:MM\"\n\n        \n        // Comparar la hora actual con hora_inicio y hora_fin\n        if (horaActual === hora_iniciof) {\n            // Publicar un mensaje de ON\n            mensaje.push({ topic: sala_real, payload: \"ON\" });\n            node.warn(`Encendiendo sala ${registro.sala_real}`);\n        } else if (horaActual === hora_finf) {\n            // Publicar un mensaje de OFF\n            mensaje.push({ topic: sala_real, payload: \"OFF\" });\n            node.warn(`Apagando sala ${registro.sala_real}`);\n        }\n       node.warn(\"Hora inicio: \"+hora_iniciof+\" Hora actual:\"+horaActual);\n    });\n\n\n// Si hay un mensaje a publicar\nif (mensaje) {\n    return [mensaje, null]; // Enviar el mensaje a un nodo de publicación MQTT\n} else {\n    return [null, msg]; // Continuar el flujo normalmente si no hay coincidencia\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 560,
+        "wires": [
+            [
+                "75556836a3170629",
+                "42f68809471c1304"
+            ]
+        ]
+    },
+    {
+        "id": "78af5d814286418e",
+        "type": "debug",
+        "z": "ba153755bb703802",
+        "name": "Mostrar Clases del dia",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e9c3c9fd267b472d",
+        "type": "function",
+        "z": "ba153755bb703802",
+        "name": "Guardar clases",
+        "func": "// Guardar el msg.payload en una variable global\nglobal.set('dbData', msg.payload);\n\n// Puedes agregar este mensaje si quieres verificar el almacenamiento\nmsg.info = \"Datos guardados globalmente en 'dbData'\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 280,
+        "wires": [
+            [
+                "78af5d814286418e"
+            ]
+        ]
+    },
+    {
+        "id": "75556836a3170629",
+        "type": "debug",
+        "z": "ba153755bb703802",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "42f68809471c1304",
+        "type": "split",
+        "z": "ba153755bb703802",
+        "name": "Enviar datos ",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 930,
+        "y": 560,
+        "wires": [
+            [
+                "5331ab5a99d666af"
+            ]
+        ]
+    },
+    {
+        "id": "e82b8efa5a29ef93",
+        "type": "function",
+        "z": "ba153755bb703802",
+        "name": "Obtener salas 10min antes de iniciar",
+        "func": "// Obtener la hora actual\nconst now = new Date();\nconst horaActual = now.getHours() * 60 + now.getMinutes(); // Convertir la hora actual a minutos totales\nmsg.hora = `${now.getHours()}:${now.getMinutes().toString().padStart(2, '0')}`;\n\n// Obtener los datos almacenados globalmente de la base de datos\nconst dbData = global.get('dbData');\n\n// Recorrer los registros de dbData para comparar la hora\nlet mensaje = [];\nlet topicoParaEscuchar = null; // Variable para almacenar el tópico\n\ndbData.forEach(registro => {\n    const { hora_inicio, hora_fin, sala_real } = registro;\n\n    // Convertir hora_inicio a minutos totales\n    let parts = hora_inicio.split(\":\");\n    let horaInicioMinutos = parseInt(parts[0]) * 60 + parseInt(parts[1]);\n\n    // Comparar si la hora actual es 15 minutos antes de la hora de inicio\n    if (horaActual === (horaInicioMinutos - 15)) {\n        // Publicar un mensaje de ON\n        mensaje.push({ topic: sala_real, payload: \"ON\" });\n        node.warn(`Encendiendo sala ${registro.sala_real} 15 minutos antes`);\n\n        // Asignar el tópico para escuchar\n        topicoParaEscuchar = sala_real; // Establece el tópico para escuchar\n    }\n    node.warn(`Hora inicio: ${hora_inicio} Hora actual: ${msg.hora}`);\n});\n\n// Si hay un mensaje a publicar o un tópico a escuchar\nif (mensaje.length > 0) {\n    msg.topic = topicoParaEscuchar; // Agrega el tópico al mensaje\n    return [mensaje, msg]; // Enviar el mensaje a un nodo de publicación MQTT y al debug\n} else {\n    return [null, msg]; // Continuar el flujo normalmente si no hay coincidencia\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 920,
+        "wires": [
+            [
+                "41417f85699b6bf1"
+            ]
+        ]
+    },
+    {
+        "id": "29953c78140fe556",
+        "type": "inject",
+        "z": "ba153755bb703802",
+        "name": "Ejecutar cada 1 segundo",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "hora",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 820,
+        "wires": [
+            [
+                "e82b8efa5a29ef93"
+            ]
+        ]
+    },
+    {
+        "id": "41417f85699b6bf1",
+        "type": "debug",
+        "z": "ba153755bb703802",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 900,
+        "wires": []
     },
     {
         "id": "0aa2ba8e4ef97849",
@@ -438,125 +2020,98 @@
         "wires": []
     },
     {
-        "id": "b2cd7032c28babb3",
-        "type": "postgreSQLConfig",
-        "name": "Obtener clases",
-        "host": "127.0.0.1",
-        "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "SCC_TEST_CLASES",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "applicationName": "",
-        "applicationNameType": "str",
-        "max": "10",
-        "maxFieldType": "num",
-        "idle": "1000",
-        "idleFieldType": "num",
-        "connectionTimeout": "10000",
-        "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "root",
-        "passwordFieldType": "str"
-    },
-    {
-        "id": "5322238dbb9749db",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "z3ef5889.ala.us-east-1.emqxsl.com",
-        "port": "8883",
-        "tls": "0b89bbcfcf8700fb",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": true,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": "",
-        "credentials": {
-        "user": "nano1",
-        "password": "nano1"
-    }
-
-
-    },
-    {
-        "id": "0b89bbcfcf8700fb",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "emqxsl-ca.crt",
-        "servername": "",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    }
-    ,
-    {
-        "id": "f8b29b715bb8b2c9",
-        "type": "tab",
-        "label": "Flow 6",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "auto-reconnect",
-        "type": "inject",
-        "z": "f8b29b715bb8b2c9",
-        "name": "Forzar reconexión al iniciar",
-        "props": [],
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 2,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 150,
-        "y": 100,
+        "id": "mqtt_in",
+        "type": "mqtt in",
+        "z": "60617d118646dea1",
+        "name": "Recibir presencia",
+        "topic": "+/pres",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "5322238dbb9749db",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 440,
+        "y": 280,
         "wires": [
             [
-                "reconnect-function"
+                "filter_noiniciada"
             ]
         ]
     },
     {
-        "id": "reconnect-function",
+        "id": "filter_noiniciada",
         "type": "function",
-        "z": "f8b29b715bb8b2c9",
-        "name": "Reconectar MQTT",
-        "func": "// Forzar reconexión manual al broker\nnode.send({ connect: true });\nreturn msg;",
+        "z": "60617d118646dea1",
+        "name": "Filtrar No Iniciadas",
+        "func": "// Obtener la lista global de clases \"No Iniciada\"\nlet noIniciada = global.get(\"NoIniciada\") || [];\n\n// Obtener el número de sala desde el tópico del mensaje\nlet sala = msg.topic.split(\"/\")[0];\n\n// Verificar si el número de sala está en la lista de clases \"No Iniciada\"\nlet salaEnLista = noIniciada.some(record => record.sala_real == sala);\nnode.warn(salaEnLista+sala);\n\n// Si la sala está en la lista, dejar pasar el mensaje\nif (salaEnLista) {\n    return msg; // Dejar pasar el mensaje\n} else {\n    return null; // Bloquear el mensaje\n}\n",
         "outputs": 1,
+        "timeout": "",
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 400,
-        "y": 100,
+        "libs": [],
+        "x": 640,
+        "y": 280,
+        "wires": [
+            [
+                "function_presencia",
+                "2fa1b0920bb251bd"
+            ]
+        ]
+    },
+    {
+        "id": "function_presencia",
+        "type": "function",
+        "z": "60617d118646dea1",
+        "name": "Lógica de presencia",
+        "func": "let presencia = msg.payload;\nlet sala = msg.topic.split(\"/\")[0];\nif (presencia.includes(\"Stationary target\")) {\n    return {\n        payload: \"ON\",\n        topic: sala\n    };\n} else {\n    return null;\n}\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 280,
+        "wires": [
+            [
+                "mqtt_out"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_out",
+        "type": "mqtt out",
+        "z": "60617d118646dea1",
+        "name": "Enviar ON",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "5322238dbb9749db",
+        "x": 1040,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "2fa1b0920bb251bd",
+        "type": "debug",
+        "z": "60617d118646dea1",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 460,
         "wires": []
     }
-
 ]
